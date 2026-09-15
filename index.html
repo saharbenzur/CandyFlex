@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Candy Flex</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🍭 Candy Flex 🍬</h1>
+        <p>Learn Flexbox by arranging the candies!</p>
+    </header>
+
+    <main>
+
+        <section class="instructions">
+            <h2 id="level-title">Level 1 of 6</h2>
+            <p id="level-instruction">
+                Arrange the candies in a row at the center of the board.
+            </p>
+        </section>
+
+        <section id="game-board">
+            <div class="candy">🍭</div>
+            <div class="candy">🍬</div>
+            <div class="candy">🍫</div>
+        </section>
+
+        <section class="controls">
+
+            <div class="control-group">
+                <label for="flex-direction">Flex Direction</label>
+                <select id="flex-direction">
+                    <option value="row">row</option>
+                    <option value="column">column</option>
+                    <option value="row-reverse">row-reverse</option>
+                    <option value="column-reverse">column-reverse</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="justify-content">Justify Content</label>
+                <select id="justify-content">
+                    <option value="flex-start">flex-start</option>
+                    <option value="center">center</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="space-between">space-between</option>
+                    <option value="space-around">space-around</option>
+                    <option value="space-evenly">space-evenly</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="align-items">Align Items</label>
+                <select id="align-items">
+                    <option value="stretch">stretch</option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="center">center</option>
+                    <option value="flex-end">flex-end</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="flex-wrap">Flex Wrap</label>
+                <select id="flex-wrap">
+                    <option value="nowrap">nowrap</option>
+                    <option value="wrap">wrap</option>
+                </select>
+            </div>
+
+        </section>
+
+        <section class="buttons">
+            <button id="previous-btn">← Previous Level</button>
+            <button id="check-btn">Check Answer</button>
+            <button id="reset-btn">Reset Level</button>
+        </section>
+        <p id="attempts">Attempts: 0</p>
+        <p id="message"></p>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
