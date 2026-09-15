@@ -40,7 +40,7 @@ main {
 
 #game-board {
     width: 600px;
-    height: 350px;
+    aspect-ratio: 12 / 7;
     max-width: 100%;
     margin: 12px auto;
     padding: 20px;
